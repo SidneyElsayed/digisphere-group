@@ -1,16 +1,23 @@
 /* 
 Fonts: 
-body - Playfair Display font-family: 'Playfair Display', serif;
-featured - Zeyada font-family: 'Zeyada', cursive;
+body - Open Sans | font-family: 'Open Sans', sans-serif;
+featured - Montserrat | font-family: 'Montserrat', sans-serif;
 text-lato - Lato for copyright at bottom of page
+
+Colors:
+Light Blue: #58E5FF
+Medium Blue: #00A0D6
+Dark Blue: #344554
+
 */
 
 :root {
-    --dark: rgb(60,60,60);
-    --light: rgb(120,120,120);
+    --dark: #344554;
+    --medium: #00A0D6;
+    --light: #58E5FF;
     --white: white;
-    --primary-font: 'Playfair Display', serif;
-    --featured-font: 'Zeyada', cursive;
+    --primary-font: 'Open Sans', sans-serif;
+    --featured-font: 'Montserrat', sans-serif;
 }
 
 /* Universal Reset */ 

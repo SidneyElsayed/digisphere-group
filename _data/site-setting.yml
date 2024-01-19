@@ -1,0 +1,18 @@
+seo:
+  site_name: DigiSphere Group
+  title: DigiSphere Group
+  description: The DigiSphere is an international digital marketing agency based in Dubai, UAE offering social media and advertising consultancy, website development and more.
+  social_image:
+  twitter_card:
+  twitter_description: The DigiSphere is an international digital marketing agency based in Dubai, UAE offering social media and advertising consultancy, website development and more.
+  keywords:
+  favicon_image:
+social:
+  instagram_username:
+  facebook_url:
+  twitter_username:
+design:
+  dark_color: '#344554'
+  medium_color: '#00A0D6'
+  light_color: '#58E5FF'
+  white_color: '#ffffff'
