@@ -69,6 +69,7 @@ img {
 .padded-r-0 { padding-right: 0; }
     
 /* Margin Utility Classes */ 
+.margin-b-01 { margin-bottom: 1%; }
 .margin-b-03 { margin-bottom: 3%; }
 
 .margin-t { margin-top: 5%; }
