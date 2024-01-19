@@ -140,7 +140,7 @@ li a {
 }
 
 a:hover {
-    color: var(--light);
+    color: var(--medium);
     }
 
 hr {
