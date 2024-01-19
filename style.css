@@ -420,7 +420,7 @@ footer p {
 .bg-image, 
 [class*=bg-image] {
     background-color: rgb(240,240,240);
-    background-image: url('/images/');
+    background-image: url('/images/The_DigiSphere_Logo_Dark_no_words.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -446,7 +446,9 @@ footer p {
 .bg-pos-b-r { background-position: 85% 85%; }
     
 /* Images */
-.bg-image-1 { background-image: url('/images/experience-hegra-1.jpg'); }
+.bg-image-logo-dark { background-image: url('/images/The_DigiSphere_Logo_Dark_no_words.png'); }
+.bg-image-logo-light { background-image: url('/images/The_DigiSphere_Logo_Light_no_words.png'); }
+
 /* Image Gallery Styles */
 .gallery [class*="col-"] {
     padding: 0.5%;
