@@ -40,6 +40,8 @@ img {
 .padded-sm { padding: 2.5%; }
 .padded    { padding: 5%;   }
 .padded-lg { padding: 10%;  }
+
+.padded-logo { padding-left: 80px;}
     
 .padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem; }
@@ -319,6 +321,10 @@ header nav a {
     z-index: 3;
   }  
 
+.logo-button h2 {
+    max-width: 75%;
+}
+
 .article-button {
     cursor: pointer;
     text-decoration: none;
@@ -547,7 +553,6 @@ footer p {
     .logo {
         text-align: left;
         font-size: 1.7rem;
-        padding: 3% 10%;
     }
 
     .logo-img{
@@ -565,7 +570,6 @@ footer p {
     .logo {
         text-align: left;
         font-size: 1.5rem;
-        padding-left: 13%;
     }
 
     .logo-img{
@@ -575,9 +579,7 @@ footer p {
    
 /* Gridlex sm media query Max 768px _sm-* played with break-point sizing for logo */
 @media (max-width:48em) {
-    .logo {
-        padding-left: 17%;
-    }
+   
 }
 
 
