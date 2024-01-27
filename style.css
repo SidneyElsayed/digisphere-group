@@ -73,6 +73,7 @@ img {
 /* Margin Utility Classes */ 
 .margin-b-01 { margin-bottom: 1%; }
 .margin-b-03 { margin-bottom: 3%; }
+.margin-tb-2 { margin-top: 2rem; margin-bottom: 2rem; }
 
 .margin-t { margin-top: 5%; }
 .margin-b { margin-bottom: 5%; }
@@ -188,18 +189,37 @@ header a:hover {
   color: var(--light);
 }
 
-.logo {
-  font-size: 2.3rem;
-}
-
-.logo-img {
-    max-width: 40%;
-}
-
 header nav a {
   padding: 0.2rem;
   margin: 0.3rem;
 }
+
+.logo-img {
+    cursor: pointer;
+    padding: 0.5rem;
+    max-width: 85px;
+    margin-top: -2.4rem;
+    margin-left: -1rem;
+    display: inline-block;
+    position: fixed;
+    left: 1rem;
+    top: 2.5rem;
+    z-index: 3;
+  }  
+
+  .logo-text {
+    cursor: pointer;
+    font-size: 2.3rem;
+    padding: 0.5rem;
+    max-width: 300px;
+    margin-top: -1.5rem;
+    margin-left: 4rem;
+    display: inline-block;
+    position: fixed;
+    left: 1rem;
+    top: 2.5rem;
+    z-index: 3;
+  }  
 
 /* Dropdown Styles */
 .dropdown {
@@ -307,23 +327,6 @@ header nav a {
     color: var(--light);
     z-index: 4;
   }
-
-.logo-button {
-    cursor: pointer;
-    padding: 0.5rem;
-    max-width: 85px;
-    margin-top: -2.4rem;
-    margin-left: -1rem;
-    display: inline-block;
-    position: fixed;
-    left: 1rem;
-    top: 2.5rem;
-    z-index: 3;
-  }  
-
-.logo-button h2 {
-    max-width: 75%;
-}
 
 .article-button {
     cursor: pointer;
@@ -550,14 +553,7 @@ footer p {
 
 /* @media (max-width: 64em)  Max 1024px _md-* played with break-point sizing for logo */
 @media (max-width: 64em) {
-    .logo {
-        text-align: left;
-        font-size: 1.7rem;
-    }
 
-    .logo-img{
-        max-width: 30%;
-    }
 }
 
 /* Gridlex sm media query Max 768px _sm-* played with break-point sizing for logo */
@@ -566,15 +562,12 @@ footer p {
     .mob-show    {display: block;}
     .mob-padded  {padding: 5%;}
     .mob-padded-lg  {padding: 10%;}
-
-    .logo {
-        text-align: left;
-        font-size: 1.5rem;
+    
+    .mob-menu-bg-white {
+        background-color:var(--white);
+        min-height: 4.5rem;
     }
 
-    .logo-img{
-        max-width: 20%;
-    }
     }
    
 /* Gridlex sm media query Max 768px _sm-* played with break-point sizing for logo */
