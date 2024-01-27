@@ -310,8 +310,8 @@ header nav a {
     cursor: pointer;
     padding: 0.5rem;
     max-width: 85px;
-    margin-top: -1.5rem;
-    line-height: 0.8rem;
+    margin-top: -2.4rem;
+    margin-left: -1rem;
     display: inline-block;
     position: fixed;
     left: 1rem;
@@ -543,10 +543,11 @@ footer p {
 .mob-show {display: none;}
 
 /* @media (max-width: 64em)  Max 1024px _md-* played with break-point sizing for logo */
-@media (max-width: 65em) {
+@media (max-width: 64em) {
     .logo {
         text-align: left;
-        font-size: 2rem;
+        font-size: 1.7rem;
+        padding: 3% 10%;
     }
 
     .logo-img{
@@ -555,7 +556,7 @@ footer p {
 }
 
 /* Gridlex sm media query Max 768px _sm-* played with break-point sizing for logo */
-@media (max-width: 53em) {
+@media (max-width:48em) {
     .mob-hide    {display: none; }
     .mob-show    {display: block;}
     .mob-padded  {padding: 5%;}
@@ -564,6 +565,7 @@ footer p {
     .logo {
         text-align: left;
         font-size: 1.5rem;
+        padding-left: 13%;
     }
 
     .logo-img{
@@ -571,6 +573,14 @@ footer p {
     }
     }
    
+/* Gridlex sm media query Max 768px _sm-* played with break-point sizing for logo */
+@media (max-width:48em) {
+    .logo {
+        padding-left: 17%;
+    }
+}
+
+
 /* General Responsive CSS Styles */ 
     
 .show-xs, 
