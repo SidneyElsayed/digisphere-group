@@ -73,7 +73,7 @@ img {
 /* Margin Utility Classes */ 
 .margin-b-01 { margin-bottom: 1%; }
 .margin-b-03 { margin-bottom: 3%; }
-.margin-tb-2 { margin-top: 2rem; margin-bottom: 2rem; }
+.margin-tb-header-custom { margin-top: 25px; margin-bottom: 25px; }
 
 .margin-t { margin-top: 5%; }
 .margin-b { margin-bottom: 5%; }
@@ -565,7 +565,7 @@ footer p {
     
     .mob-menu-bg-white {
         background-color:var(--white);
-        min-height: 4.5rem;
+        min-height: 4.9rem;
     }
 
     }
