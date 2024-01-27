@@ -306,6 +306,19 @@ header nav a {
     z-index: 4;
   }
 
+.logo-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    max-width: 85px;
+    margin-top: -1.5rem;
+    line-height: 0.8rem;
+    display: inline-block;
+    position: fixed;
+    left: 1rem;
+    top: 2.5rem;
+    z-index: 3;
+  }  
+
 .article-button {
     cursor: pointer;
     text-decoration: none;
