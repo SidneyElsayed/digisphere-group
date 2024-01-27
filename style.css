@@ -474,6 +474,12 @@ footer p {
 /* Images */
 .bg-image-logo-dark { background-image: url('/images/The_DigiSphere_Logo_Dark_no_words.png'); }
 .bg-image-logo-light { background-image: url('/images/The_DigiSphere_Logo_Light_no_words.png'); }
+.bg-stock-1  { background-image: url('/images/digisphere-stock-photo-1.jpg'); }
+.bg-stock-2  { background-image: url('/images/digisphere-stock-photo-2.jpg'); }
+.bg-stock-3  { background-image: url('/images/digisphere-stock-photo-3.jpg'); }
+.bg-stock-4  { background-image: url('/images/digisphere-stock-photo-4.jpg'); }
+.bg-stock-5  { background-image: url('/images/digisphere-stock-photo-5.jpg'); }
+
 
 /* Image Gallery Styles */
 .gallery [class*="col-"] {
