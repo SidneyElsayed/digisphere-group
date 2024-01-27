@@ -478,7 +478,10 @@ footer p {
 .bg-stock-2  { background-image: url('/images/digisphere-stock-photo-2.jpg'); }
 .bg-stock-3  { background-image: url('/images/digisphere-stock-photo-3.jpg'); }
 .bg-stock-4  { background-image: url('/images/digisphere-stock-photo-4.jpg'); }
-.bg-stock-5  { background-image: url('/images/digisphere-stock-photo-5.jpg'); }
+.bg-stock-5  { 
+    background-image: url('/images/digisphere-stock-photo-5.jpg'); 
+    background-size: cover;
+}
 
 
 /* Image Gallery Styles */
