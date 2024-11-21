@@ -1,0 +1,597 @@
+/* 
+Fonts: 
+body - Open Sans | font-family: 'Open Sans', sans-serif;
+featured - Montserrat | font-family: 'Montserrat', sans-serif;
+text-lato - Lato for copyright at bottom of page
+
+Colors:
+Light Blue: #58E5FF
+Medium Blue: #00A0D6
+Dark Blue: #344554
+*/
+
+:root {
+    --dark: #344554;
+    --medium: #00A0D6;
+    --light: #58E5FF;
+    --white: white;
+    --primary-font: 'Open Sans', sans-serif;
+    --featured-font: 'Montserrat', sans-serif;
+}
+
+/* Universal Reset */
+* {
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+    }
+
+img {
+    max-width: 100%;
+    display: block;
+    }
+    
+/* Resetting Gridlex Padding */ 
+[class*=col-] {
+    padding: 0; 
+    }
+
+/* Padding Utility Classes */ 
+.padded-sm { padding: 2.5%; }
+.padded    { padding: 5%;   }
+.padded-lg { padding: 10%;  }
+
+.padded-logo { padding-left: 80px;}
+    
+.padded-05 { padding: 0.5rem; }
+.padded-1  { padding: 1rem; }
+.padded-2  { padding: 2rem; }
+    
+.padded-t { padding-top: 5%; }
+.padded-b { padding-bottom: 5%; }
+.padded-l { padding-left: 5%; }
+.padded-r { padding-right: 5%; }
+    
+.padded-tb { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr { padding-left: 5%; padding-right: 5%; }
+    
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-right: 1rem; }
+    
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-right: 2rem; }
+    
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-right: 0; }
+    
+/* Margin Utility Classes */ 
+.margin-b-01 { margin-bottom: 1%; }
+.margin-b-03 { margin-bottom: 3%; }
+.margin-tb-header-custom { margin-top: 25px; margin-bottom: 25px; }
+
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+    
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+    
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+    
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+    
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+.margin-tb-lg { margin-top: 10%; margin-bottom: 10%; }
+.margin-lr-lg { margin-left: 10%; margin-right: 10%; }
+.margin-lr-xl { margin-left: 15%; margin-right: 15%; }
+.margin-lr-xxl { margin-left: 20%; margin-right: 20%; }
+
+.tall-20  { min-height: 20vh;  }
+.tall-30  { min-height: 30vh;  }
+.tall-40  { min-height: 40vh;  }
+.tall-50  { min-height: 50vh;  }
+.tall-60  { min-height: 60vh;  }
+.tall-70  { min-height: 70vh;  }
+.tall-80  { min-height: 80vh;  }
+.tall-90  { min-height: 90vh;  }
+.tall-100 { min-height: 100vh; }
+    
+/* Typography Styles */ 
+body {
+    font-family: var(--primary-font);
+    color: var(--dark);
+}
+
+h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+    }
+    
+p {
+    line-height: 1.6; 
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    }
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+p a {
+    border-bottom: 1px solid var(--dark);
+}
+
+li a {
+    border-bottom: 1px solid var(--dark);
+}
+
+a:hover {
+    color: var(--medium);
+    }
+
+hr {
+    border: none;
+    border-bottom: 1px solid rgb(200,200,200);
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.featured-text { font-family: var(--featured-font);}
+.text-lato { font-family: 'Lato', sans-serif;}
+
+.white-text { color: var(--white);}
+
+.medium-text { font-size: 2rem; }
+.big-text    { font-size: 2.5rem; }
+    
+h2:last-child, 
+h3:last-child, 
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+    margin-bottom: 0;
+    }
+    
+.text-left   { text-align: left;   }
+.text-right  { text-align: right;  }
+.text-center { text-align: center; }
+
+/* Header Styles */
+header {
+    padding: 1% 5%;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+header a:hover {
+  color: var(--light);
+}
+
+header nav a {
+  padding: 0.2rem;
+  margin: 0.3rem;
+}
+
+.logo-img {
+    cursor: pointer;
+    padding: 0.5rem;
+    max-width: 85px;
+    margin-top: -2.4rem;
+    margin-left: -1rem;
+    display: inline-block;
+    position: fixed;
+    left: 1rem;
+    top: 2.5rem;
+    z-index: 3;
+}  
+
+.logo-text {
+    cursor: pointer;
+    font-size: 2.3rem;
+    padding: 0.5rem;
+    max-width: 300px;
+    margin-top: -1.5rem;
+    margin-left: 4rem;
+    display: inline-block;
+    position: fixed;
+    left: 1rem;
+    top: 2.5rem;
+    z-index: 3;
+}  
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+   }
+   .dropdown-title {
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+   }
+   .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: -1rem;
+    padding: 0.5rem;
+    display: none;
+    background-color: white;
+    z-index: 2;
+    text-align: left;
+    min-width: 15rem;
+   }
+   .dropdown:hover .dropdown-content {
+    display: block;
+   }
+   .dropdown-content a {
+    display: block;
+   }
+
+/* Overlay Styles */
+
+.bg-overlay {
+    position: relative;
+  }
+  
+  .bg-overlay::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .bg-overlay > * {
+    position: relative;
+  }
+
+/* Card Styles */
+  
+.card-index {
+    padding: 0;
+    margin: 1rem;
+  }
+
+.card-booking {
+    padding: 1rem;
+}
+  
+.card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.2),0 10px 10px -5px rgba(0,0,0,.2)
+  }
+
+.card img {
+    margin-top: 2.5rem;
+  }
+
+.price {
+    font-size: 1rem;
+    color: var(--light);
+  }
+
+.subtitle {
+    font-size: 0.8rem;
+    font-weight: light;
+    letter-spacing: 0.05em;
+    color: var(--light);
+  }
+
+.horizontal-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.info-icons {
+    padding-left:2rem;
+    padding-right: 0.5rem;
+}
+
+/* Button Styles */
+.hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    margin-top: -1.2rem;
+    line-height: 0.8rem;
+    display: inline-block;
+    position: fixed;
+    right: 1rem;
+    top: 2.5rem;
+    z-index: 3;
+  }  
+
+.hamburger-button.active {
+    color: var(--light);
+    z-index: 4;
+  }
+
+.article-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: left;
+}
+
+.article-button:hover {
+    color: var(--light);
+}
+
+.leading-page-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block; 
+}
+
+.cta-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--dark);
+    border: 1px solid var(--dark);
+    padding: 0.5rem 5%;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    color: var(--dark);
+    background-color: var(--light);
+    border: 1px solid var(--light);
+    transition: all 0.2s;
+}
+
+
+.cta-button-light {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    padding: 0.5rem 5%;
+    display: inline-block;
+}
+
+.cta-button-light:hover {
+    color: var(--white);
+    background-color: var(--light);
+    border: 1px solid var(--light);
+    transition: all 0.2s;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    display: none;
+    background-color: var(--dark);
+    padding: 5%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+   
+  }
+  
+  .mobile-menu a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 3vh 1rem;
+    display: block;
+  }
+
+  .mob-dropdown a {
+    padding: 1vh 1rem;
+  }
+  
+
+/* Responsive Text Banner Styles */
+.responsive-banner {
+    background-size: cover;
+    color: var(--white);
+    min-height: 40vh;
+    font-size: 2.5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsive-banner h2 {
+    font-size: 7vw;
+}
+
+/* Footer Styles */
+
+footer p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.copyright {
+    padding-bottom: 1rem;
+    color: rgb(115,110,110);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.bg-dark {
+    background-color: var(--dark);
+    color: var(--white);
+}
+    
+/* Background Image Utility Classes */ 
+.bg-image, 
+[class*=bg-image] {
+    background-color: rgb(240,240,240);
+    background-image: url('/images/The_DigiSphere_Logo_Dark_no_words.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    
+/* Aspect Ratio */
+.portrait-tall 	{ padding-bottom: 175%; }
+.portrait 		{ padding-bottom: 125%; }
+.square 		{ padding-bottom: 100%; }
+.landscape		{ padding-bottom: 66%;  }
+.landscape-wide 	{ padding-bottom: 56%;  }
+    
+/* Background Positions */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+    
+.bg-pos-t-l { background-position: left top; }
+.bg-pos-b-r { background-position: right bottom; }
+    
+.bg-pos-t-l { background-position: 10% 10%; }
+.bg-pos-b-r { background-position: 85% 85%; }
+    
+/* Images */
+.bg-image-logo-dark { background-image: url('/images/The_DigiSphere_Logo_Dark_no_words.png'); }
+.bg-image-logo-light { background-image: url('/images/The_DigiSphere_Logo_Light_no_words.png'); }
+.bg-stock-1  { background-image: url('/images/digisphere-stock-photo-1.jpg'); }
+.bg-stock-2  { background-image: url('/images/digisphere-stock-photo-2.jpg'); }
+.bg-stock-3  { background-image: url('/images/digisphere-stock-photo-3.jpg'); }
+.bg-stock-4  { background-image: url('/images/digisphere-stock-photo-4.jpg'); }
+.bg-stock-5  { 
+    background-image: url('/images/digisphere-stock-photo-5.jpg'); 
+    background-size: cover;
+}
+
+
+/* Image Gallery Styles */
+.gallery [class*="col-"] {
+    padding: 0.5%;
+    }
+
+/* Background of gallery when active  */
+.lg-backdrop {
+    background-color: var(--dark);
+}
+
+.lg-backdrop.in {
+    opacity: 0.95;
+}
+
+/* Privacy Policy */
+.privacy-policy {
+    padding: 5% 15%;
+}
+
+.privacy-policy h3 {
+    margin-top:0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.privacy-policy h4 {
+    margin-top:1rem;
+    margin-bottom: 0.3rem;
+}
+
+.privacy-policy p {
+    margin-bottom: 0.5rem;
+}
+
+.privacy-policy p:last-child {
+    margin-bottom: 1.5rem;
+}
+
+/* Cookie Banner Styles */
+#cookie-notice {
+    padding: 0.5rem 1rem;
+    display: none;
+    text-align: center;
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    background: #222;
+    color: rgba(255,255,255,0.8);
+}
+#cookie-notice a {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    color: var(--light)
+}
+#cookie-notice .button-subtle {
+  opacity: 0.8;
+  color: var(--dark);
+}
+#close-cookie-banner {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0.5
+}
+    
+/* Gridlex Media Queries 
+  @media (max-width: 36em)  Max 576px 	_xs-*
+  @media (max-width: 48em)  Max 768px 	_sm-*
+  @media (max-width: 64em)  Max 1024px 	_md-*
+  @media (max-width: 80em)  Max 1280px 	_lg-*
+*/
+
+/* Responsive Styles */
+.mob-show {display: none;}
+
+/* @media (max-width: 64em)  Max 1024px _md-* played with break-point sizing for logo */
+@media (max-width: 64em) {
+
+}
+
+/* Gridlex sm media query Max 768px _sm-* played with break-point sizing for logo */
+@media (max-width:48em) {
+    .mob-hide    {display: none; }
+    .mob-show    {display: block;}
+    .mob-padded  {padding: 5%;}
+    .mob-padded-lg  {padding: 10%;}
+    
+    .mob-menu-bg-white {
+        background-color:var(--white);
+        min-height: 4.9rem;
+    }
+
+    }
+   
+/* Gridlex sm media query Max 768px _sm-* played with break-point sizing for logo */
+@media (max-width:48em) {
+   
+}
+
+
+/* General Responsive CSS Styles */ 
+    
+.show-xs, 
+.show-sm,
+.show-md {
+    display: none;
+    }
+    
+    
