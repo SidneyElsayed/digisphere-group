@@ -1,0 +1,22 @@
+<section class="container mx-auto py-32 px-8 sm:px-16">
+  <div class="grid md:grid-cols-7 gap-6">
+    <!-- md:h-full on the div negates the h-72, h-full on the image is still needed because of the position absolute -->
+    <div class="col-span-4 grow relative order-first aspect-square md:h-full md:aspect-auto md:order-none "> 
+      <img class="absolute w-full h-full object-cover aspect-square rounded-full" style="object-position: {{block.image-horizontal-focal-point}} {{block.image-vertical-focal-point}}" src="{{block.image}}" alt="{{block.alt}}">
+    </div>
+    <!-- Secondary Heading -->
+    <div class="col-span-3 pl-12 {% if block.image-placement == 'right' %} pl-0 pr-12 md:order-first {% endif %}">
+      <div>
+        <h3 class="featured-text text-3xl pb-6 pt-10 md:pt-0">{{block.heading}}</h3>
+      </div>
+      <p class="pb-3 featured-text">{{block.overline}}</p>
+      <p class="pb-3">{{block.text}}</p>
+      <p class="pb-3 featured-text text-yam">{{block.bold-colored-text}}</p>
+      <div class="pt-8">
+        {% if block.button-link and block.button-text %}
+        <a href="{{block.button-link}}" class="button">{{block.button-text}}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
