@@ -4,7 +4,10 @@ body - Open Sans | font-family: 'Open Sans', sans-serif;
 featured - Montserrat | font-family: 'Montserrat', sans-serif;
 text-lato - Lato for copyright at bottom of page
 
-
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Universal Reset */
 * {
