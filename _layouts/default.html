@@ -29,9 +29,19 @@
 {% include header.html %}
 
 {% for block in page.blocks %}
+<!-- {{block.id}} -->
 
-{% include /{{block.id}}.html %}
+{% if block.type == 'services' %}
+  {% assign number = block.services-number %}
+  {% assign item = site.services[number] %}
 
+    {% include /{{block.id}}.html item=item %}
+
+  {% else %}
+  {% assign item = block %}
+  {% include /{{block.id}}.html link=link item=item %}
+
+{% endif %}
 {% endfor %}
 
    <!-- {{content}} -->

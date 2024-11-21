@@ -1,0 +1,7 @@
+<section class="px-8 md:px-16 py-24 {% if block.text-align == 'left' %} text-left {% elsif block.text-align == 'center' %} text-center {% elsif block.text-align == 'right' %} text-right {% endif %}">
+  <h3 class="featured-text text-4xl pb-6">{{block.heading}}</h3>
+  <p class="pb-8">{{block.text}}</p>
+  {% if block.button-link and block.button-text %}
+  <a href="{{block.button-link}}" class="button">{{block.button-text}}</a>
+  {% endif %}
+</section>
