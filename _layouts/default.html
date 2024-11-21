@@ -7,16 +7,33 @@
 
 </head>
 
-<body>
-  
-  {% include inline-styles.html %}
+<style>
+  :root {
+     --featured-color: {{site.data.style.featured-color}};
+     --featured-md-color: {{site.data.style.featured-md-color}};
+     --featured-light-color: {{site.data.style.featured-light-color}};
+     --mustard-color: {{site.data.style.mustard-color}};
+     --yam-color: {{site.data.style.yam-color}};
+     --apricot-color: {{site.data.style.apricot-color}};
+     --lipstick-color: {{site.data.style.lipstick-color}};
+     --cherry-color: {{site.data.style.cherry-color}};
+     --base-light-color: {{site.data.style.base-light-color}};
+     --base-dark-color: {{site.data.style.base-dark-color}};
+  }
+</style>
 
-  {% include cookie-banner.html %}
+<body class="bg-base-light text-featured">
 
-  <!-- Header Nav + Mobile Menu -->
-  {% include header.html %}
+<!-- Header -->
+{% include header.html %}
 
-  {{content}}
+{% for block in page.blocks %}
+
+{% include /{{block.id}}.html %}
+
+{% endfor %}
+
+   <!-- {{content}} -->
 
   <!-- Footer -->
   {% include footer.html %} 

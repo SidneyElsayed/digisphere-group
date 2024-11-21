@@ -10,8 +10,15 @@ module.exports = {
     extend: {
       colors: {
         'featured': 'var(--featured-color)',
-        'accent': 'var(--accent-color)',
-        'base-color': 'var(--base-color)',
+        'featured-md': 'var(--featured-md-color)',
+        'featured-light': 'var(--featured-light-color)',
+        'mustard': 'var(--mustard-color)',
+        'yam': 'var(--yam-color)',
+        'apricot': 'var(--apricot-color)',
+        'lipstick': 'var(--lipstick-color)',
+        'cherry': 'var(--cherry-color)',
+        'base-light': 'var(--base-light-color)',
+        'base-dark': 'var(--base-dark-color)',
       }
     },
   },
