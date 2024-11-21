@@ -17,6 +17,7 @@ module.exports = {
         'apricot': 'var(--apricot-color)',
         'lipstick': 'var(--lipstick-color)',
         'cherry': 'var(--cherry-color)',
+        'cream': 'var(--cream-color)',
         'base-light': 'var(--base-light-color)',
         'base-dark': 'var(--base-dark-color)',
       }

@@ -1,20 +1,9 @@
-/* 
-Fonts: 
-body - Open Sans | font-family: 'Open Sans', sans-serif;
-featured - Montserrat | font-family: 'Montserrat', sans-serif;
-text-lato - Lato for copyright at bottom of page
 
 /* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Universal Reset */
-* {
-    padding: 0;
-    margin : 0;
-    box-sizing: border-box;
-    }
 
 img {
     max-width: 100%;
@@ -27,4 +16,13 @@ img {
 body            { font-family: 'Poppins', sans-serif;  }
 .featured-text  { font-family: 'Paytone One', sans-serif; }
 
-    
+/* Link & button styles */
+
+.button {
+    font-family: 'Paytone One', sans-serif; 
+    color: var(--featured-light-color);
+    background-color: var(--featured-color);
+    border-radius: 5px 25px 25px 25px;
+    padding: .75rem 1.25rem;
+
+}

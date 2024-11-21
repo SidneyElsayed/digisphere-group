@@ -1,0 +1,26 @@
+<section class="px-8 md:px-16 py-6 grid md:grid-cols-2 gap-6 h-[80vh]">
+
+  <div>
+    <h1 class="pb-8 featured-text text-7xl">{{block.heading}}</h1>
+    <p class="pb-8 text-sm">{{block.text}}</p>
+    {% if block.button-link and block.button-text %}
+    <a href="{{block.button-link}}" class="button">{{block.button-text}}</a>
+    {% endif %}
+  </div>
+
+  <div class="grow relative">
+    <img class="absolute w-full h-full object-cover" style="object-position: {{block.image-horizontal-focal-point}} {{block.image-vertical-focal-point}}" src="{{block.image}}" alt="{{block.alt}}">
+
+    <!-- This is the svg -->
+    <div class="absolute w-full h-full object-cover">
+      <svg xmlns="http://www.w3.org/2000/svg" width="500" height="400" viewBox="0 0 726 634" fill="none">
+      <rect x="254.676" y="74.542" width="112.338" height="290.748" rx="56.169" transform="rotate(39.033 254.676 74.542)" fill="#D9D9D9"/>
+      <rect x="381.594" y="109.244" width="112.338" height="290.748" rx="56.169" transform="rotate(39.033 381.594 109.244)" fill="#D9D9D9"/>
+      <rect x="587.34" y="237.981" width="112.338" height="379.45" rx="56.169" transform="rotate(39.033 587.34 237.981)" fill="#D9D9D9"/>
+      <rect x="193.062" y="341.791" width="112.338" height="156.462" rx="56.169" transform="rotate(39.033 193.062 341.791)" fill="#D9D9D9"/>
+      <rect x="544.207" y="99.9248" width="112.338" height="527.288" rx="56.169" transform="rotate(39.033 544.207 99.9248)" fill="#D9D9D9"/>
+      </svg>
+    </div>
+  </div>
+
+</section>

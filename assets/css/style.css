@@ -1,8 +1,3 @@
-/* 
-Fonts: 
-body - Open Sans | font-family: 'Open Sans', sans-serif;
-featured - Montserrat | font-family: 'Montserrat', sans-serif;
-text-lato - Lato for copyright at bottom of page
 
 /* Tailwind */
 *, ::before, ::after {
@@ -111,8 +106,7 @@ text-lato - Lato for copyright at bottom of page
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-/* 
-! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -439,27 +433,89 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
-.col-span-1 {
-  grid-column: span 1 / span 1;
+.absolute {
+  position: absolute;
 }
-.col-span-3 {
-  grid-column: span 3 / span 3;
+.relative {
+  position: relative;
 }
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .block {
   display: block;
 }
+.flex {
+  display: flex;
+}
 .grid {
   display: grid;
+}
+.h-full {
+  height: 100%;
+}
+.h-\[80vh\] {
+  height: 80vh;
+}
+.w-full {
+  width: 100%;
+}
+.grow {
+  flex-grow: 1;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.flex-col {
+  flex-direction: column;
+}
+.content-center {
+  align-content: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-12 {
+  gap: 3rem;
+}
+.gap-16 {
+  gap: 4rem;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .bg-base-light {
   background-color: var(--base-light-color);
 }
-.bg-featured {
-  background-color: var(--featured-color);
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-8 {
+  padding: 2rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.pb-8 {
+  padding-bottom: 2rem;
 }
 .text-center {
   text-align: center;
@@ -468,20 +524,33 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.text-9xl {
-  font-size: 8rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
+}
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 .text-featured {
   color: var(--featured-color);
 }
 
-/* Universal Reset */
-* {
-    padding: 0;
-    margin : 0;
-    box-sizing: border-box;
-    }
 
 img {
     max-width: 100%;
@@ -494,4 +563,32 @@ img {
 body            { font-family: 'Poppins', sans-serif;  }
 .featured-text  { font-family: 'Paytone One', sans-serif; }
 
-    
+/* Link & button styles */
+
+.button {
+    font-family: 'Paytone One', sans-serif; 
+    color: var(--featured-light-color);
+    background-color: var(--featured-color);
+    border-radius: 5px 25px 25px 25px;
+    padding: .75rem 1.25rem;
+
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+  .md\:p-16 {
+    padding: 4rem;
+  }
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
