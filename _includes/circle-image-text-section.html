@@ -1,8 +1,16 @@
 <section class="py-32 px-8 sm:px-16">
   <div class="grid md:grid-cols-6 gap-6">
     <!-- md:h-full on the div negates the h-72, h-full on the image is still needed because of the position absolute -->
-    <div class="relative col-span-3 order-first md:order-none"> 
-      <img class="grow absolute aspect-square h-full w-full rounded-full content-center" style="object-position: {{block.image-horizontal-focal-point}} {{block.image-vertical-focal-point}}" src="{{block.image}}" alt="{{block.alt}}">
+    <div class="relative aspect-square col-span-3 order-first md:order-none self-center"> 
+      {% for dot in block.dots %}
+      <div class="absolute overflow-hidden rounded-full" style="height:{{dot.dimensions}}; width:{{dot.dimensions}}; top:{{dot.top}}; left:{{dot.left}}; background:{{dot.color}}"> 
+        <img class="content-center" src="{{dot.image}}" alt="{{dot.alt}}">
+      </div>
+        {% endfor %}
+
+    
+      <!-- color dot -->
+      <div class="grow absolute h-[5vw] w-[5vw] -bottom-[3vw] -left-[3vw] rounded-full content-center bg-cherry"></div>
     </div>
     <!-- Secondary Heading -->
     <div class="col-span-3 pl-12 {% if block.image-placement == 'right' %} pl-0 pr-12 md:order-first {% endif %}">
