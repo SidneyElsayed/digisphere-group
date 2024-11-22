@@ -1,4 +1,4 @@
-<div class="px-16 py-24 bg-featured">
+<div class="px-16 py-32 bg-featured">
 
   {% if block.section-heading %}
 
@@ -6,7 +6,7 @@
 
   {% endif %}
 
-  <div class="gap-6 p-16 pt-6 {% if items.size > 3 %} flex overflow-x-auto w-full {% else %} grid md:grid-cols-3 {% endif %}">
+  <div class="gap-6 pt-6 {% if items.size > 3 %} flex overflow-x-auto w-full {% else %} grid md:grid-cols-3 {% endif %}">
 
     {% for item in site.data.services | limit:3 %}
 
