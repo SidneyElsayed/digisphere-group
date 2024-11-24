@@ -30,21 +30,42 @@ blocks:
         - image: https://images.unsplash.com/photo-1541560052-5e137f229371?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVyc29uJTIwZGlnaXRhbHxlbnwwfHwwfHx8MA%3D%3D
           alt:
           dimensions: 100%
+          top: 
+          left: 
+        - image: 
+          color: '#0A9396'
+          alt:
+          dimensions: 27%
+          top: -1%
+          left: -1%
         - image: https://images.unsplash.com/photo-1541560052-5e137f229371?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVyc29uJTIwZGlnaXRhbHxlbnwwfHwwfHx8MA%3D%3D
           alt:
           dimensions: 25%
+          top: 
+          left:
+        - image:
+          color: '#CA6702'
+          alt:
+          dimensions: 42%
+          top: 69%
+          left: 69%
         - image: https://images.unsplash.com/photo-1541560052-5e137f229371?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVyc29uJTIwZGlnaXRhbHxlbnwwfHwwfHx8MA%3D%3D
           alt:
           dimensions: 40%
-          top: 60%
-          left: 60%
+          top: 70%
+          left: 70%
         - image: 
-          color: '#272'
+          color: '#EE9B00'
           alt:
-          dimensions: 40%
-          top: 30%
-          left: 60%
-    
+          dimensions: 15%
+          top: 7%
+          left: 95%
+        - image: 
+          color: '#005F73'
+          alt:
+          dimensions: 7%
+          top: 4%
+          left: 92%
   - id: big-text-banner 
     large-text: Another big heading here because we can.
     heading: A heading of bold text here.
@@ -53,26 +74,32 @@ blocks:
     button-link: /index.html
   - id: rounded-columns-section
     section-heading: Helping you to be the best you can be.
-    heading-red: Design
-    text-red: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    image-red: https://www.instituteofcode.com/assets/images/cutout-3.png
-    alt-red:
-    heading-yellow: Web Development
-    text-yellow: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    image-yellow: https://www.instituteofcode.com/assets/images/cutout-3.png
-    alt-yellow:
-    heading-blue: Copywriting
-    text-blue: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    image-blue: https://www.instituteofcode.com/assets/images/cutout-3.png
-    alt-blue:
-    heading-orange: Social Media
-    text-orange: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    image-orange: https://www.instituteofcode.com/assets/images/cutout-3.png
-    alt-orange:
-    heading-dark-blue: Strategy
-    text-dark-blue: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    image-dark-blue: https://www.instituteofcode.com/assets/images/cutout-3.png
-    alt-dark-blue:
+    column-loop:
+        - color: '#005F73'
+          height: 80vh
+          heading: Web Development
+          text: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          image: 
+          alt:
+        - color: '#EE9B00'
+          height: 60vh
+          heading: Design
+          text: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          image: 
+          alt:
+        - color: '#CA6702'
+          height: 50vh
+          heading: Strategy
+          text: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          image: 
+          alt:
+        - color: '#9B2226'
+          height: 65vh
+          heading: Social Media
+          text: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          image: 
+          alt:
+    
   - id: cards-section
     section-heading: Designs that just make sense.
     card-loop:

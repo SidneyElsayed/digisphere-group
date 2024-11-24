@@ -1,52 +1,19 @@
 <section class="px-8 sm:px-16 py-28">
   <h2 class="featured-text text-5xl text-center">{{block.section-heading}}</h2>
   <!-- columns-3 makes the columns rotate through, but break - then add break-inside-avoid to each div above the image in the loop -->
-  <div class="lg:grid grid-cols-5 gap-10 text-center items-center py-16 columns-3 break-inside-avoid">
+  <div class="lg:grid grid-cols-4 gap-10 text-center items-center py-16 columns-2">
     <!-- red column as the  one Dan helped with - overflow:hidden to crop the image nicely -->
+    {% for col in block.column-loop %}
     <!-- RED COLUMN -->
-    <div class="bg-cherry h-[60vh] pt-16 rounded-full text-base-light p-2 relative overflow-hidden break-inside-avoid">
-      <h3 class="featured-text text-xl pb-3">{{block.heading-red}}</h3>
-      {% if block.text-red %}
-      <p>{{block.text-red}}</p>
-      {% endif %}
-      <img class="absolute w-full rounded-b-full bottom-0" src="{{block.image-red}}" alt="{{block.alt-red}}">
+    <div class="py-16 rounded-full text-base-light p-4 relative overflow-hidden flex items-center break-inside-avoid" style="background: {{col.color}}; height: {{col.height}};">
+      <div class="">
+        <h3 class="featured-text text-xl pb-3">{{col.heading}}</h3>
+        {% if col.text %}
+        <p>{{col.text}}</p>
+        {% endif %}
+      </div>
+      <!-- <img class="absolute w-full bottom-0" src="{{col.image}}" alt="{{col.alt}}"> -->
     </div>
-
-    <!-- YELLOW COLUMN -->
-    <div class="bg-mustard h-[85vh] pt-16 rounded-full text-base-light p-2 break-inside-avoid">
-      <h3 class="featured-text text-xl pb-3">{{block.heading-yellow}}</h3>
-      {% if block.text-yellow %}
-      <p>{{block.text-yellow}}</p>
-      {% endif %}
-      <img class="h-full w-full rounded-b-full mt-45" src="{{block.image-yellow}}" alt="{{block.alt-yellow}}">
-    </div>
-
-    <!-- BLUE COLUMN -->
-    <div class="bg-featured-md h-[75vh] pt-16 rounded-full text-base-light p-2">
-      <h3 class="featured-text text-xl pb-3">{{block.heading-blue}}</h3>
-      {% if block.text-blue %}
-      <p>{{block.text-blue}}</p>
-      {% endif %}
-      <img class="h-full w-full rounded-b-full mt-45" src="{{block.image-blue}}" alt="{{block.alt-blue}}">
-    </div>
-
-    <!-- ORANGE COLUMN -->
-    <div class="bg-apricot h-[65vh] pt-16 rounded-full text-base-light p-2">
-      <h3 class="featured-text text-xl pb-3">{{block.heading-orange}}</h3>
-      {% if block.text-orange %}
-      <p>{{block.text-orange}}</p>
-      {% endif %}
-      <img class="h-full w-full rounded-b-full mt-45" src="{{block.image-orange}}" alt="{{block.alt-orange}}">
-    </div>
-
-    <!-- DARK BLUE COLUMN -->
-    <div class="bg-featured h-[80vh] pt-16 rounded-full text-base-light p-2">
-      <h3 class="featured-text text-xl pb-3">{{block.heading-dark-blue}}</h3>
-      {% if block.text-dark-blue %}
-      <p>{{block.text-dark-blue}}</p>
-      {% endif %}
-      <img class="h-full w-full rounded-b-full mt-45" src="{{block.image-dark-blue}}" alt="{{block.alt-dark-blue}}">
-    </div>
-
+    {% endfor %}
   </div>
 </section>

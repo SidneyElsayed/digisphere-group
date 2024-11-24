@@ -607,6 +607,10 @@ video {
   -moz-columns: 3;
        columns: 3;
 }
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
+}
 .break-inside-avoid {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
@@ -617,11 +621,17 @@ video {
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
 .content-center {
   align-content: center;
+}
+.items-start {
+  align-items: flex-start;
 }
 .items-center {
   align-items: center;
@@ -643,6 +653,12 @@ video {
 }
 .gap-10 {
   gap: 2.5rem;
+}
+.place-self-center {
+  place-self: center;
+}
+.self-start {
+  align-self: flex-start;
 }
 .self-end {
   align-self: flex-end;
