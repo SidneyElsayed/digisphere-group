@@ -20,10 +20,56 @@ body            { font-family: 'Poppins', sans-serif;  }
 
 .button {
     font-family: 'Paytone One', sans-serif; 
-    color: var(--featured-light-color);
+    color: var(--base-light-color);
     background-color: var(--featured-color);
+    transition: all 150ms;
     border-radius: 5px 25px 25px 25px;
     padding: .75rem 1.25rem;
     display: inline-block;
+    text-transform: lowercase;
 
+}
+
+.button:hover {
+    /* color: var(--mustard-color); */
+    background-color: var(--featured-md-color);
+}
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    margin-top: -.0.7rem;
+    line-height: 0.8rem;
+    display: inline-block;
+    position: fixed;
+    right: 1.75rem;
+    top: 2rem;
+    z-index: 2;
+  }
+
+  .hamburger-button.active {
+    color: var(--featured-md-color);
+  }
+
+  .mobile-menu {
+    display: none;
+    background-color: var(--featured-color);
+  }
+
+  .mobile-menu a {
+    color: var(--base-light-color);
+    display: block;
+    margin: 0.5rem 0rem;
+    padding: 0.75rem 2.5rem;
+    text-transform: uppercase;
+    transform: all 150ms;
+  }
+
+  .mobile-menu a:hover {
+    color: var(--featured-light-color);
+  }
+
+.mobile-menu, text-mustard {
+    color: var(--mustard-color);
 }

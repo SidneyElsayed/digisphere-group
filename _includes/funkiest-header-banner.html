@@ -1,14 +1,14 @@
 <section class="px-8 md:px-16 py-20 grid md:grid-cols-2 gap-6 min-h-[80vh]">
 
   <div>
-    <h1 class="pb-8 featured-text text-7xl">{{block.heading}}</h1>
+    <h1 class="pb-8 featured-text text-5xl sm:text-7xl">{{block.heading}}</h1>
     <p class="pb-8 text-sm">{{block.text}}</p>
     {% if block.button-link and block.button-text %}
     <a href="{{block.button-link}}" class="button">{{block.button-text}}</a>
     {% endif %}
   </div>
 
-  <div class="grow relative">
+  <div class="grow relative ">
     <img class="absolute w-full h-full object-cover" style="object-position: {{block.image-horizontal-focal-point}} {{block.image-vertical-focal-point}}" src="{{block.image}}" alt="{{block.alt}}">
 
 
