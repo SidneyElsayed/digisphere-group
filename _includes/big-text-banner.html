@@ -1,8 +1,8 @@
 <section class="py-32 px-8 sm:px-16 grid grid-cols-3">
-  <h3 class="col-span-3 md:col-span-2 featured-text text-5xl leading-snug pb-10 pr-6">{{block.large-text}}</h3>
+  <h3 class="col-span-3 md:col-span-2 featured-text text-3xl sm:text-5xl leading-snug pb-10 pr-6">{{block.large-text}}</h3>
   <div class="col-span-3 md:col-span-1">
-    <p class="featured-text text-xl pb-4">{{block.heading}}</p>
-    <p class="pb-4">{{block.text}}</p>
+    <p class="font-bold text-cherry text-xl pb-4">{{block.heading}}</p>
+    <p class="pb-8">{{block.text}}</p>
     {% if block.button-link and block.button-text %}
     <a href="{{block.button-link}}" class="button">{{block.button-text}}</a>
     {% endif %}

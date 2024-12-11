@@ -2,7 +2,7 @@
 
   {% if block.section-heading %}
 
-  <h2 class="pb-8 featured-text text-6xl text-base-light">{{block.section-heading}}</h2>
+  <h2 class="pb-8 featured-text text-6xl text-cream">{{block.section-heading}}</h2>
 
   {% endif %}
 
@@ -11,15 +11,15 @@
     {% for item in site.data.pricing.card-loop %}
 
       <!-- Card Loop -->
-      <div class="rounded-[5px_25px] bg-base-light {% if items.size > 3 %} basis-[30%] shrink-0 {% endif %}">
+      <div class="rounded-[5px_25px] bg-cream {% if items.size > 3 %} basis-[30%] shrink-0 {% endif %}">
         <div class="">
-          <img class="aspect-square rounded-[5px_25px]  object-cover w-full" src="{{item.image}}" alt="{{item.alt}}">
+          <img class="aspect-square rounded-[5px_25px_0px_0px]  object-cover w-full" src="{{item.image}}" alt="{{item.alt}}">
         </div>
         <div class="p-8 pb-8">
           <h3 class="featured-text py-4 text-2xl">{{item.heading}}</h3>
 
           {% if item.subtitle %}
-          <p class="pb-4 text-bold italic">{{item.subtitle}}</p>
+          <p class="pb-4 font-bold italic text-cherry">{{item.subtitle}}</p>
           {% endif %}
 
           {% for item in item.list-loop %}

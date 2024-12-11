@@ -489,6 +489,9 @@ video {
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 .flex {
   display: flex;
 }
@@ -528,6 +531,9 @@ video {
 .max-w-16 {
   max-width: 4rem;
 }
+.max-w-24 {
+  max-width: 6rem;
+}
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -551,6 +557,9 @@ video {
 .break-inside-avoid {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
+}
+.grid-flow-row {
+  grid-auto-flow: row;
 }
 .grid-flow-col {
   grid-auto-flow: column;
@@ -618,6 +627,9 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-\[5px_25px_0px_0px\] {
+  border-radius: 5px 25px 0px 0px;
+}
 .bg-base-light {
   background-color: var(--base-light-color);
 }
@@ -632,6 +644,9 @@ video {
 }
 .bg-mustard {
   background-color: var(--mustard-color);
+}
+.bg-cream {
+  background-color: var(--cream-color);
 }
 .object-cover {
   -o-object-fit: cover;
@@ -754,6 +769,9 @@ video {
 .pr-10 {
   padding-right: 2.5rem;
 }
+.pr-4 {
+  padding-right: 1rem;
+}
 .text-left {
   text-align: left;
 }
@@ -826,6 +844,9 @@ video {
 }
 .text-cherry {
   color: var(--cherry-color);
+}
+.text-cream {
+  color: var(--cream-color);
 }
 .overline {
   text-decoration-line: overline;
@@ -928,6 +949,10 @@ body            { font-family: 'Poppins', sans-serif;  }
     font-size: 3.75rem;
     line-height: 1;
   }
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1009,5 +1034,9 @@ body            { font-family: 'Poppins', sans-serif;  }
   }
   .lg\:pb-0 {
     padding-bottom: 0px;
+  }
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
