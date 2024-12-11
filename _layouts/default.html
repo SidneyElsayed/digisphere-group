@@ -32,8 +32,10 @@
 <!-- {{block.id}} -->
 
 {% if block.type == 'services' %}
-  {% assign number = block.services-number %}
-  {% assign item = site.services[number] %}
+  {% assign items = site.services.card-loop %}
+
+{% elsif block.type == 'pricing' %}
+  {% assign items = site.pricing.card-loop %}
 
     {% include /{{block.id}}.html item=item %}
 

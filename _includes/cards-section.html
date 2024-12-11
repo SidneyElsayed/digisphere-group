@@ -2,16 +2,20 @@
 
   {% if block.section-heading %}
 
-  <h2 class="px-16 pb-14 featured-text text-6xl text-base-light">{{block.section-heading}}</h2>
+  <h2 class="px-16 pb-16 featured-text text-6xl text-base-light">{{block.section-heading}}</h2>
 
   {% endif %}
 
-  <div class="px-16 gap-6 min-h-[50vh] {% if block.card-loop.size > 3 %} flex overflow-x-scroll w-full {% else %} grid md:grid-cols-3 {% endif %}">
+  <div class="px-16 gap-6 min-h-[50vh] grid md:grid-cols-3">
+
+    <!-- add to scroll {% if block.card-loop.size > 3 %} flex overflow-x-scroll w-full {% else %} grid md:grid-cols-3 {% endif %} -->
 
     {% for item in block.card-loop: %}
 
       <!-- Card Loop -->
-      <div class="rounded-[5px_25px_25px_25px] bg-base-light {% if block.card-loop.size > 3 %} basis-[26rem] shrink-0 {% endif %}">
+      <div class="rounded-[5px_25px_25px_25px] bg-base-light">
+
+        <!-- add this if statement on scroll {% if block.card-loop.size > 3 %} basis-[26rem] shrink-0 {% endif %} -->
         <div class="p-4 pb-8">
           <i class="p-8 -m-4 fa-solid {{item.icon}} text-3xl bg-featured-md text-base-light rounded-[5px_45px_45px_45px]"></i>
           <h3 class="px-4 pt-8 featured-text text-2xl">{{item.heading}}</h3>

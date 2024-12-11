@@ -715,6 +715,9 @@ video {
 .pl-4 {
   padding-left: 1rem;
 }
+.pb-16 {
+  padding-bottom: 4rem;
+}
 .text-left {
   text-align: left;
 }
@@ -769,6 +772,9 @@ video {
 }
 .text-yam {
   color: var(--yam-color);
+}
+.text-cherry {
+  color: var(--cherry-color);
 }
 .overline {
   text-decoration-line: overline;

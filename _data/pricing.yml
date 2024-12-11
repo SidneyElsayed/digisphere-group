@@ -1,17 +1,20 @@
 card-loop:
-      - heading: Web Development
+      - heading: Basic Splash Page
+        subtitle: Perfect for launching quickly
         short-description: lorem temporibus ipsa! Necessitatibus quibusdam ut blanditiis molestias perspiciatis dolorem quae autem illum cumque.
         button-text: learn more
         button-link: /index.html
         image: https://images.unsplash.com/photo-1541560052-5e137f229371?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
         alt:
-      - heading: Copywriting
+      - heading: Basic Multi-Page Website
+        subtitle: Ideal for small businesses
         short-description: lorem temporibus ipsa! Necessitatibus quibusdam ut blanditiis molestias perspiciatis dolorem quae autem illum cumque.
         button-text: learn more
         button-link: /index.html
         image: https://images.unsplash.com/photo-1541560052-5e137f229371?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
         alt:
-      - heading: Social Media
+      - heading: Top-Tier Multi-Page Website
+        subtitle: Designed for growth and engagement
         short-description: lorem temporibus ipsa! Necessitatibus quibusdam ut blanditiis molestias perspiciatis dolorem quae autem illum cumque.
         button-text: learn more
         button-link: /index.html
