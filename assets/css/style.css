@@ -673,6 +673,12 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
+.p-3 {
+  padding: 0.75rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -720,6 +726,18 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
@@ -958,8 +976,14 @@ body            { font-family: 'Poppins', sans-serif;  }
   .sm\:max-w-16 {
     max-width: 4rem;
   }
+  .sm\:max-w-20 {
+    max-width: 5rem;
+  }
   .sm\:p-4 {
     padding: 1rem;
+  }
+  .sm\:p-8 {
+    padding: 2rem;
   }
   .sm\:px-16 {
     padding-left: 4rem;
@@ -968,6 +992,10 @@ body            { font-family: 'Poppins', sans-serif;  }
   .sm\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .sm\:text-7xl {
     font-size: 4.5rem;

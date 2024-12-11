@@ -2,7 +2,7 @@
 
   {% if block.section-heading %}
 
-  <h2 class="pb-8 featured-text text-6xl text-cream">{{block.section-heading}}</h2>
+  <h2 class="pb-8 featured-text text-5xl sm:text-6xl text-cream">{{block.section-heading}}</h2>
 
   {% endif %}
 
@@ -15,7 +15,7 @@
         <div class="">
           <img class="aspect-square rounded-[5px_25px_0px_0px]  object-cover w-full" src="{{item.image}}" alt="{{item.alt}}">
         </div>
-        <div class="p-8 pb-8">
+        <div class="p-5 sm:p-8 pb-8">
           <h3 class="featured-text py-4 text-2xl">{{item.heading}}</h3>
 
           {% if item.subtitle %}
