@@ -1,12 +1,12 @@
-<div class="py-32 bg-cherry grid">
+<div class="py-32 px-8 sm:px-16 bg-cherry grid">
 
   {% if block.section-heading %}
 
-  <h2 class="px-16 pb-16 featured-text text-4xl sm:text-6xl text-cream">{{block.section-heading}}</h2>
+  <h2 class="pb-16 featured-text text-4xl sm:text-6xl text-cream">{{block.section-heading}}</h2>
 
   {% endif %}
 
-  <div class="px-16 gap-6 min-h-[50vh] grid md:grid-cols-3">
+  <div class="gap-6 min-h-[50vh] grid md:grid-cols-3">
 
     <!-- add to scroll {% if block.card-loop.size > 3 %} flex overflow-x-scroll w-full {% else %} grid md:grid-cols-3 {% endif %} -->
 
