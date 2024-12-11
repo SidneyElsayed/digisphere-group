@@ -11,16 +11,24 @@
     {% for item in site.data.pricing.card-loop %}
 
       <!-- Card Loop -->
-      <div class="rounded-[5px_25px] bg-base-light text-center {% if items.size > 3 %} basis-[30%] shrink-0 {% endif %}">
+      <div class="rounded-[5px_25px] bg-base-light {% if items.size > 3 %} basis-[30%] shrink-0 {% endif %}">
         <div class="">
           <img class="aspect-square rounded-[5px_25px]  object-cover w-full" src="{{item.image}}" alt="{{item.alt}}">
         </div>
-        <div class="p-4 pb-8">
+        <div class="p-8 pb-8">
           <h3 class="featured-text py-4 text-2xl">{{item.heading}}</h3>
 
           {% if item.subtitle %}
-          <p class="text-bold">{{item.subtitle}}</p>
+          <p class="pb-4 text-bold italic">{{item.subtitle}}</p>
           {% endif %}
+
+          {% for item in item.list-loop %}
+            {% if item.text %}
+            <ol class="pb-1">
+              <li><span class="">✔ </span>{{item.text}}</li>
+            </ol>
+            {% endif %}
+          {% endfor %} 
 
           {% if item.short-description %}
           <p class="p-4 pb-10">{{item.short-description}}</p>

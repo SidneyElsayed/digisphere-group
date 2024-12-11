@@ -1,22 +1,33 @@
 card-loop:
-      - heading: Basic Splash Page
+      - heading: Basic splash page
         subtitle: Perfect for launching quickly
-        short-description: lorem temporibus ipsa! Necessitatibus quibusdam ut blanditiis molestias perspiciatis dolorem quae autem illum cumque.
-        button-text: learn more
-        button-link: /index.html
+        list-loop:
+          - text: One beautifully designed landing page
+          - text: Mobile responsive and fast-loading
+        short-description: 
+        button-text: 
+        button-link: 
         image: https://images.unsplash.com/photo-1541560052-5e137f229371?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
         alt:
-      - heading: Basic Multi-Page Website
+      - heading: Simple multi-page site
         subtitle: Ideal for small businesses
-        short-description: lorem temporibus ipsa! Necessitatibus quibusdam ut blanditiis molestias perspiciatis dolorem quae autem illum cumque.
-        button-text: learn more
-        button-link: /index.html
+        list-loop:
+          - text: Four to five pages, including Home, Contact and About
+          - text: Modular design for easy scalability
+          - text: Mobile responsive and fast-loading
+        short-description: 
+        button-text: 
+        button-link: 
         image: https://images.unsplash.com/photo-1541560052-5e137f229371?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
         alt:
-      - heading: Top-Tier Multi-Page Website
+      - heading: Complex multi-page build
         subtitle: Designed for growth and engagement
-        short-description: lorem temporibus ipsa! Necessitatibus quibusdam ut blanditiis molestias perspiciatis dolorem quae autem illum cumque.
-        button-text: learn more
-        button-link: /index.html
+        list-loop:
+          - text: Resuable page layouts for blogs or experiences
+          - text: Customized modular sections with built-in flexibility
+          - text: Mobile responsive and fast-loading
+        short-description: 
+        button-text: 
+        button-link:
         image: https://images.unsplash.com/photo-1541560052-5e137f229371?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
         alt:
