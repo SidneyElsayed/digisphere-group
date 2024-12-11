@@ -475,6 +475,12 @@ video {
 .-m-4 {
   margin: -1rem;
 }
+.-m-2 {
+  margin: -0.5rem;
+}
+.m-2 {
+  margin: 0.5rem;
+}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -533,6 +539,9 @@ video {
 }
 .max-w-24 {
   max-width: 6rem;
+}
+.max-w-12 {
+  max-width: 3rem;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -661,6 +670,9 @@ video {
 .p-6 {
   padding: 1.5rem;
 }
+.p-2 {
+  padding: 0.5rem;
+}
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -771,6 +783,9 @@ video {
 }
 .pr-4 {
   padding-right: 1rem;
+}
+.pb-0 {
+  padding-bottom: 0px;
 }
 .text-left {
   text-align: left;
@@ -934,12 +949,25 @@ body            { font-family: 'Poppins', sans-serif;  }
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .sm\:-m-4 {
+    margin: -1rem;
+  }
   .sm\:flex {
     display: flex;
+  }
+  .sm\:max-w-16 {
+    max-width: 4rem;
+  }
+  .sm\:p-4 {
+    padding: 1rem;
   }
   .sm\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+  .sm\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
   .sm\:text-7xl {
     font-size: 4.5rem;
@@ -952,6 +980,18 @@ body            { font-family: 'Poppins', sans-serif;  }
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

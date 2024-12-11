@@ -2,7 +2,7 @@
 
   {% if block.section-heading %}
 
-  <h2 class="px-16 pb-16 featured-text text-6xl text-cream">{{block.section-heading}}</h2>
+  <h2 class="px-16 pb-16 featured-text text-4xl sm:text-6xl text-cream">{{block.section-heading}}</h2>
 
   {% endif %}
 
@@ -16,9 +16,9 @@
       <div class="rounded-[5px_25px_25px_25px] bg-cream">
 
         <!-- add this if statement on scroll {% if block.card-loop.size > 3 %} basis-[26rem] shrink-0 {% endif %} -->
-        <div class="p-4 pb-8">
-          <i class="p-8 -m-4 fa-solid {{item.icon}} text-3xl bg-featured-md text-cream rounded-[5px_45px_45px_45px]"></i>
-          <h3 class="px-4 pt-8 featured-text text-2xl">{{item.heading}}</h3>
+        <div class="p-2 sm:p-4 pb-8">
+          <i class="p-8 -m-2 sm:-m-4 fa-solid {{item.icon}} text-2xl sm:text-3xl bg-featured-md text-cream rounded-[5px_45px_45px_45px]"></i>
+          <h3 class="px-4 pt-8 featured-text text-xl sm:text-2xl">{{item.heading}}</h3>
           <p class="p-4 pb-6">{{item.text}}</p>
 
           {% if item.button-link and item.button-text %}
