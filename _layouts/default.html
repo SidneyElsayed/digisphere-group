@@ -32,18 +32,18 @@
 <!-- {{block.id}} -->
 
 {% if block.type == 'services' %}
-  {% assign items = site.services.card-loop %}
+  {% assign item = site.services.card-loop %}
 
 {% elsif block.type == 'pricing' %}
-  {% assign items = site.pricing.card-loop %}
-
-    {% include /{{block.id}}.html item=item %}
+  {% assign item = site.pricing.card-loop %}
 
   {% else %}
-  {% assign item = block %}
-  {% include /{{block.id}}.html link=link item=item %}
+  {% assign item = block.items %}
 
 {% endif %}
+
+{% include /{{block.id}}.html link=link item=item %}
+
 {% endfor %}
 
    <!-- {{content}} -->

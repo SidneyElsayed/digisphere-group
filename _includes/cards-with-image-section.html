@@ -8,8 +8,7 @@
 
   <div class="gap-6 pt-6 {% if items.size > 3 %} flex overflow-x-auto w-full {% else %} grid md:grid-cols-3 {% endif %}">
 
-    {% for item in items %}
-    <!-- {% for item in site.data.pricing | limit:3 %} -->
+    {% for item in site.data.pricing.card-loop %}
 
       <!-- Card Loop -->
       <div class="rounded-[5px_25px] bg-base-light text-center {% if items.size > 3 %} basis-[30%] shrink-0 {% endif %}">
@@ -20,7 +19,7 @@
           <h3 class="featured-text py-4 text-2xl">{{item.heading}}</h3>
 
           {% if item.subtitle %}
-          <p class="p-4 pb-10">{{item.subtitle}}</p>
+          <p class="text-bold">{{item.subtitle}}</p>
           {% endif %}
 
           {% if item.short-description %}
