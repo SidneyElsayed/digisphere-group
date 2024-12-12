@@ -16,6 +16,16 @@ img {
 body            { font-family: 'Poppins', sans-serif;  }
 .featured-text  { font-family: 'Paytone One', sans-serif; }
 
+/* Resuable features */
+
+.curved-border-top {
+    border-radius: 5px 25px 25px 25px;
+}
+
+.curved-border-bottom {
+    border-radius: 25px 25px 5px 25px;
+}
+
 /* Link & button styles */
 
 .button {
@@ -35,6 +45,11 @@ body            { font-family: 'Poppins', sans-serif;  }
     background-color: var(--featured-md-color);
 }
 
+.hover-cream:hover {
+    color: var(--featured-color);
+    background-color: var(--cream-color);
+}
+
 .hamburger-button {
     cursor: pointer;
     padding: 0.5rem;
@@ -52,6 +67,8 @@ body            { font-family: 'Poppins', sans-serif;  }
     color: var(--base-light-color);
   }
 
+
+/* Mobile Menu */
   .mobile-menu {
     display: none;
     background-color: var(--featured-color);
