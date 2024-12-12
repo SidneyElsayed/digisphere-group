@@ -43,7 +43,7 @@ body            { font-family: 'Poppins', sans-serif;  }
     line-height: 0.8rem;
     display: inline-block;
     position: fixed;
-    right: 2rem;
+    right: 0.8rem;
     top: 1.1rem;
     z-index: 2;
   }
