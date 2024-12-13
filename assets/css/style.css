@@ -885,6 +885,28 @@ body            { font-family: 'Poppins', sans-serif;  }
     background-color: var(--cream-color);
 }
 
+.button.bg-cherry {
+    color: var(--cherry-color);
+    background-color: var(--cream-color);
+    border: 2px solid var(--cream-color);
+}
+
+.button.bg-cherry:hover {
+    color: var(--cream-color);
+    background-color: var(--cherry-color);
+    border: 2px solid var(--cream-color);
+}
+
+.button.bg-featured {
+    color: var(--featured-color);
+    background-color: var(--cream-color);
+}
+
+.button.bg-featured:hover {
+    color: var(--cream-color);
+    background-color: var(--featured-md-color);
+}
+
 .hamburger-button {
     cursor: pointer;
     padding: 0.5rem;
@@ -1037,6 +1059,12 @@ body            { font-family: 'Poppins', sans-serif;  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:order-first {
+    order: -9999;
+  }
+  .lg\:order-none {
+    order: 0;
+  }
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -1052,11 +1080,20 @@ body            { font-family: 'Poppins', sans-serif;  }
   .lg\:grid-cols-10 {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .lg\:justify-around {
     justify-content: space-around;
   }
   .lg\:pb-0 {
     padding-bottom: 0px;
+  }
+  .lg\:pr-12 {
+    padding-right: 3rem;
+  }
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
   .lg\:text-6xl {
     font-size: 3.75rem;

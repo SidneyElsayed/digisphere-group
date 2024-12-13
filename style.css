@@ -50,6 +50,28 @@ body            { font-family: 'Poppins', sans-serif;  }
     background-color: var(--cream-color);
 }
 
+.button.bg-cherry {
+    color: var(--cherry-color);
+    background-color: var(--cream-color);
+    border: 2px solid var(--cream-color);
+}
+
+.button.bg-cherry:hover {
+    color: var(--cream-color);
+    background-color: var(--cherry-color);
+    border: 2px solid var(--cream-color);
+}
+
+.button.bg-featured {
+    color: var(--featured-color);
+    background-color: var(--cream-color);
+}
+
+.button.bg-featured:hover {
+    color: var(--cream-color);
+    background-color: var(--featured-md-color);
+}
+
 .hamburger-button {
     cursor: pointer;
     padding: 0.5rem;
