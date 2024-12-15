@@ -8,7 +8,7 @@
 
   <div class="gap-10 pt-10 {% if items.size > 3 %} flex overflow-x-auto w-full {% else %} grid md:grid-cols-3 {% endif %}">
 
-    {% for item in site.data.pricing.card-loop %}
+    {% for item in item %}
 
       <!-- Card Loop -->
       <div class="rounded-[5px_25px] bg-cream {% if items.size > 3 %} basis-[30%] shrink-0 {% endif %}">
