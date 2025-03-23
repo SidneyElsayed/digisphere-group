@@ -480,6 +480,9 @@ video {
 .block {
   display: block;
 }
+.inline {
+  display: inline;
+}
 .flex {
   display: flex;
 }
@@ -758,6 +761,9 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pt-32 {
+  padding-top: 8rem;
 }
 .text-left {
   text-align: left;
