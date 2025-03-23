@@ -58,8 +58,8 @@ body            { font-family: 'Poppins', sans-serif;  }
 
 .button.bg-cherry:hover {
     color: var(--cream-color);
-    background-color: var(--cherry-color);
-    border: 2px solid var(--cream-color);
+    background-color: var(--base-dark-color);
+    border: 2px solid var(--base-dark-color);
 }
 
 .button.bg-featured {
@@ -115,6 +115,6 @@ body            { font-family: 'Poppins', sans-serif;  }
     color: var(--featured-light-color);
   }
 
-.mobile-menu, text-mustard {
-    color: var(--mustard-color);
-}
+  .mobile-menu, text-mustard {
+      color: var(--mustard-color);
+  }

@@ -7,7 +7,8 @@
   {% endif %}
 
   <div class="relative">
-    <form name="contact" data-netlify="true" class="py-12 flex flex-col md:pr-12">
+    <form name="contact" action="/pages/form-success" method="POST" data-netlify="true" class="py-12 flex flex-col md:pr-12">
+      <input type="hidden" name="subject" value="Inquiry from Website Form" />
       <!-- Name -->
       <div class="py-6 md:pt-0">
     <label class="text-cream featured-text text-2xl tracking-wide font-semibold pb-2 block" for="_name"> Name </label>
@@ -15,8 +16,8 @@
       </div>
       <!-- Email -->
       <div class="pb-6">
-      <label class="text-cream featured-text text-2xl tracking-wide font-semibold pb-2 block" for="_replyto"> Email </label>
-      <input class="font-semibold text-featured border-featured border curved-border-bottom block w-full px-4 py-2 outline-none bg-base-light focus:bg-cream" type="email" name="_replyto" id="_replyto" placeholder="one you'll check" />
+      <label class="text-cream featured-text text-2xl tracking-wide font-semibold pb-2 block" for="email"> Email </label>
+      <input class="font-semibold text-featured border-featured border curved-border-bottom block w-full px-4 py-2 outline-none bg-base-light focus:bg-cream" type="email" name="email" id="_replyto" placeholder="one you'll check" />
       </div>
       <!-- Message -->
       <div class="pb-6">
